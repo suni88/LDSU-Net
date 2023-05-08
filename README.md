@@ -8,7 +8,7 @@ LDS U-Net was published in Applied Sciences Journal of MDPI under the following 
 ## LDS U-Net Model
 LDS U-Net is a lightweight version of U-Net that contains densely connected deptwise separable convolution followed by pointwise convolution, multiscale skip connec-tion, and selection gates. It is inspired by several salient features used in other models  such as  the  U-Net,  MultiResUNet,  and  Attention  U-Net. The architecture of the proposed network of Light-Convolution Dense Selection U-Net (LDS U-Net) is shown below.
 
-![alt text](https://github.com/suni88/LDSU-Net/blob/main/images/LDS U-Net.png?raw=true))
+![alt text](/images/LDSU-Net.png)
 
 
 
