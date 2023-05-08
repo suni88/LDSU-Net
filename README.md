@@ -1,5 +1,5 @@
 # LDS U-Net
-**Light-Convolution Dense Selection U-Net (LDS U-Net)for Ultrasound Lateral Bony Feature Segmentation**
+**Light-Convolution Dense Selection U-Net (LDS U-Net) for Ultrasound Lateral Bony Feature Segmentation**
 ## LDS U-Net Paper
 LDS U-Net was published in Applied Sciences Journal of MDPI under the following citation:
 
