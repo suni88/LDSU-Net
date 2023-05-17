@@ -21,7 +21,7 @@ A multi-scale inception module was incorporated  between  the  encoder  and  dec
 
 ![alt text](/images/SkipPathway.png)
 
-
+For more information on this model, read the 
 
 
 
