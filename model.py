@@ -160,7 +160,7 @@ def attention_block(x, gating, inter_shape):
     result_bn = BatchNormalization()(result)
     return result_bn
 		
-def udnet(pretrained_weights = None,input_size = (256,256,1)):
+def udnet(pretrained_weights = None,input_size = (2560,640,1)):
    inputs = Input(input_size)		
    conv1_1 =SeparableConv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(inputs)
    BatchNorm1_1 = BatchNormalization(axis=3, gamma_regularizer=l2(1e-4), beta_regularizer=l2(1e-4))(conv1_1)
