@@ -37,7 +37,7 @@ from keras import backend as K
 from tensorflow.keras.utils import to_categorical
 from keras.models import Model
 from keras.layers import Input, concatenate, Conv2D, MaxPooling2D, Activation, UpSampling2D, Normalization
-from keras.optimizers import RMSprop
+from tensorflow.keras.optimizers import RMSprop
 from keras.regularizers import l2
 #from sklearn.model_selection import train_test_split
 #def get_unet(self):
