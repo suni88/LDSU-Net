@@ -15,3 +15,15 @@ LDS U-Net is a lightweight version of U-Net that contains densely connected dept
 
 The basic structure of the light dense block is shown below and here, unlike a conventional dense network, all the convolutional layers are depthwise separable convolution layers. The first layer of the light dense block is a depthwise convolution unit that consists of  a  depthwise  convolution  block  followed  by  a  pointwise  convolution  block.  The  next layers are the batch normalization, rectified linear unit (ReLU) activation function, another depthwise convolution unit, and a dropout layer. The first depthwise convolution unit is also connected densely to the dropout layer, as shown by the green dotted arrow in the figure.Through this new design, the light dense block delivers the same advantages as a con-ventional dense block,but with a smaller number of parameters
 
+![alt text](/images/LDSBlock.png)
+
+A multi-scale inception module was incorporated  between  the  encoder  and  decoder  layers  to  enhance  the low-level  features  extracted  in  the  encoder  side.  In the skip path, a sequence of 3×3 convolution  blocks  is  used,  as  shown  in the figure below. The  outputs  from  the  three 3×3 convolution  blocks  are  concatenated  to  enhance the receptive field and reduce the semantic gap between the encoder and the decoder. A  residual  connection  of a 1×1 convolution  block  is  also  presented  in  the  skip path to make the learning procedure stable.
+
+![alt text](/images/SkipPathway.png)
+
+
+
+
+
+
+
