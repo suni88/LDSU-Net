@@ -13,7 +13,7 @@ data_gen_args = dict(rotation_range=0.2,
                     fill_mode='nearest')
 myGene = trainGenerator(2,'data/train','image','mask',data_gen_args,save_to_dir = None)
 
-model = unet()
+model = udnet()
 model_checkpoint = ModelCheckpoint('LDSU-Net.hdf5', monitor='loss',verbose=1, save_best_only=True)
 model.fit_generator(myGene,steps_per_epoch=200,epochs=10,callbacks=[model_checkpoint])
 
