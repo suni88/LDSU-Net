@@ -15,8 +15,8 @@ myGene = trainGenerator(2,'data/train','image','mask',data_gen_args,save_to_dir 
 
 model = udnet()
 model_checkpoint = ModelCheckpoint('LDSU-Net.hdf5', monitor='loss',verbose=1, save_best_only=True)
-model.fit_generator(myGene,steps_per_epoch=200,epochs=10,callbacks=[model_checkpoint])
+model.fit(myGene,steps_per_epoch=200,epochs=10,callbacks=[model_checkpoint])
 
 testGene = testGenerator("data/test")
-results = model.predict_generator(testGene,2,verbose=1)
+results = model.predict(testGene,2,verbose=1)
 saveResult("data/test",results)
