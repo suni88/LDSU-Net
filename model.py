@@ -13,7 +13,7 @@ import skimage.io as io
 import numpy as np
 from keras.models import *
 from keras.layers import *
-from keras.optimizers import *
+from tensorflow.keras.optimizers import *
 from keras.callbacks import ModelCheckpoint, LearningRateScheduler
 from keras import backend as keras
 from keras.preprocessing.image import ImageDataGenerator
