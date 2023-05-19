@@ -23,6 +23,7 @@ A multi-scale inception module was incorporated  between  the  encoder  and  dec
 
 The LDS U-Net architecture was proved to have better segmentation results for ultrasound spine images, which can be seen in the figure below.
 
+![alt text](/images/LDSresult.png)
 
 For more information on this model, read the [paper.](https://www.mdpi.com/2076-3417/11/21/10180)
 
